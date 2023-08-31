@@ -46,3 +46,16 @@ while True:
     except ValueError:
         print("Invalid input. Please enter a valid option.")
         continue
+
+    if selection == 1:
+        student_number = input("Enter Student Number: ")
+        student_name = input("Enter Student Name: ")
+        while True:
+            try:
+                student_age = int(input("Enter Student Age: "))
+                break
+            except ValueError:
+                print("Invalid Value")
+        new_student = Student(student_name, student_age, student_number)
+        students_list.append(new_student)
+        print("Student Added Successfully")
