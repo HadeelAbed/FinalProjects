@@ -20,3 +20,7 @@ class Student:
 
     def enroll_course(self, course):
         self.courses_list.append(course)
+
+    def get_student_details(self):
+        return self.__dict__
+
