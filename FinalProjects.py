@@ -34,3 +34,15 @@ class Student:
 
 
 students_list = []
+
+while True:
+    try:
+        selection = int(input("1.Add New Student\n"
+                              "2.Delete Student\n"
+                              "3.Display Student\n"
+                              "4.Get Student Average\n"
+                              "5.Add Course to Student with Mark\n"
+                              "6.Exit\n"))
+    except ValueError:
+        print("Invalid input. Please enter a valid option.")
+        continue
