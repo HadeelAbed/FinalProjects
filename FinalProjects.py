@@ -89,3 +89,16 @@ while True:
                 break
         else:
             print("Student Not Exist")
+
+    elif selection == 5:
+        student_number = input("Enter Student Number: ")
+        for student in students_list:
+            if student.student_number == student_number:
+                course_name = input("Enter Course Name: ")
+                course_mark = float(input("Enter Course Mark: "))
+                new_course = Course(course_name, course_mark)
+                student.enroll_course(new_course)
+                print("Course Added to Student Successfully")
+                break
+        else:
+            print("Student Not Exist")
