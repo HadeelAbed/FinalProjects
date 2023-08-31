@@ -18,3 +18,5 @@ class Student:
         self.student_number = student_number
         self.courses_list = []  # List to store enrolled courses
 
+    def enroll_course(self, course):
+        self.courses_list.append(course)
