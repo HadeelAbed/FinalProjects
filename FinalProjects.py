@@ -8,3 +8,13 @@ class Course:
         self.course_name = course_name
         self.course_mark = course_mark
 
+class Student:
+    total_students = 0  # Static variable to keep track of total student count
+
+    def __init__(self, student_name, student_age, student_number):
+        self.student_id = uuid.uuid4()  # Generate a unique student ID
+        self.student_name = student_name
+        self.student_age = student_age
+        self.student_number = student_number
+        self.courses_list = []  # List to store enrolled courses
+
