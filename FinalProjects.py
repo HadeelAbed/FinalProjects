@@ -79,3 +79,13 @@ while True:
                 break
         else:
             print("Student Not Exist")
+
+    elif selection == 4:
+        student_number = input("Enter Student Number: ")
+        for student in students_list:
+            if student.student_number == student_number:
+                average = student.get_student_average()
+                print(f"Student Average: {average}")
+                break
+        else:
+            print("Student Not Exist")
