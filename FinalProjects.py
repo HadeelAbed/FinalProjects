@@ -24,3 +24,6 @@ class Student:
     def get_student_details(self):
         return self.__dict__
 
+    def get_student_courses(self):
+        for course in self.courses_list:
+            print(f"Course: {course.course_name}, Mark: {course.course_mark}")
