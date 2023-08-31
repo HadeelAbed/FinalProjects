@@ -102,3 +102,8 @@ while True:
                 break
         else:
             print("Student Not Exist ")
+
+    else:
+        print("Exiting the program.")
+        break
+
